@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Unbounded:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(187, 174, 155)
+}
+
+header {
+    background-color: black;
+    height: 60px;
+}
+
+#logo {
+    font-family: 'Unbounded', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 6%;
+    padding-top: 1%;
+    color: white;
+}
+
+.corpo,
+.banners {
+    height: 530px;
+    background-color: rgb(187, 174, 155);
+}
+
+.nos {
+    margin-right: 350px;
+    margin-left: 100px;
+    padding-top: 160px;
+    animation-name: anim_1;
+    animation-duration: 1.5s;
+}
+
+h2 {
+    letter-spacing: 6px;
+    font-size: 15px;
+}
+
+#premiada {
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.nos p {
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 98, 0)
+}
+
+button {
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    padding: 25px;
+    height: 90px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 15px;
+    animation-name: anim_2;
+    animation-duration: 1.5s;
+}
+
+button:hover {
+    background: rgb(255, 98, 0);
+    color: white;
+}
+
+.banners {
+
+    height: 300px;
+    background-color: rgb(187, 174, 155);
+    display: flex;
+    justify-content: center;
+    animation-name: anim_banners;
+    animation-duration: 1.5s;
+}
+
+.banners h3 {
+    color: rgb(60, 59, 59);
+    padding-bottom: 30px;
+    animation-name: anim_banners;
+    animation-duration: 1.5s;
+}
+
+.bloco_1 {
+    margin-left: 7%;
+    border-top: 6px solid rgb(255, 98, 0);
+    border-radius: 15px;
+    height: 180px;
+    width: 25%;
+    background-color: white;
+    padding: 30px;
+}
+
+.bloco_2 {
+    margin-left: 10px;
+    border-top: 6px solid rgb(255, 98, 0);
+    border-radius: 15px;
+    height: 180px;
+    width: 25%;
+    background-color: white;
+    padding: 30px;
+}
+
+.bloco_3 {
+    margin-left: 10px;
+    border-top: 6px solid rgb(255, 98, 0);
+    border-radius: 15px;
+    height: 180px;
+    width: 25%;
+    background-color: white;
+    padding: 30px;
+
+}
+
+.bloco_4 {
+    margin-left: 10px;
+    margin-right: 7%;
+    border-top: 6px solid rgb(255, 98, 0);
+    border-radius: 15px;
+    height: 180px;
+    width: 25%;
+    background-color: white;
+    padding: 30px;
+}
+
+.bloco_1 a,
+.bloco_2 a,
+.bloco_3 a,
+.bloco_4 a {
+    text-transform: uppercase;
+    color: rgb(60, 59, 59);
+    padding-top: 30px;
+}
+
+.bloco_1 a:hover,
+.bloco_2 a:hover,
+.bloco_3 a:hover,
+.bloco_4 a:hover {
+    color: rgb(255, 98, 0);
+}
+
+.part_2 {
+    background-color: black;
+    height: 600px;
+}
+
+.part_2 h1 {
+    text-align: center;
+    color: rgb(255, 98, 0);
+    font-size: 55px;
+    padding-top: 60px;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes anim_1 {
+    from {
+        margin-left: -400px;
+    }
+
+    to {
+        margin-left: 100px;
+    }
+}
+
+@keyframes anim_2 {
+    from {
+        margin-left: -400px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+@keyframes anim_banners {
+    from {
+        margin-top: 300px;
+
+    }
+
+    to {
+
+        margin-top: 0px;
+    }
+}
+
+
+/*Medias Querie*/
+
+@media only screen and (max-width: 600px) {
+    .corpo {
+        display: flex;
+        justify-content: center;
+        height: 330px;
+
+    }
+
+    .nos {
+        padding-top: 10%;
+        margin: 0px;
+    }
+
+    .banners {
+        padding: 0%;
+        margin-left: 2px;
+        display: block;
+    }
+
+    .bloco_1 {
+        display: block;
+        padding-top: 10%;
+        margin: 2% 17% 2% 17%;
+        padding-left: 4%;
+        padding-right: 40%;
+    }
+
+    .bloco_2 {
+        display: block;
+        padding-top: 10%;
+        margin: 2% 17% 2% 17%;
+        padding-left: 4%;
+        padding-right: 40%;
+    }
+
+    .bloco_3 {
+        display: block;
+        padding-top: 10%;
+        margin: 2% 17% 2% 17%;
+        padding-left: 4%;
+        padding-right: 40%;
+    }
+
+    .bloco_4 {
+        display: block;
+        padding-top: 10%;
+        margin: 4% 17% 4% 17%;
+        padding-left: 4%;
+        padding-right: 40%;
+        margin-bottom: 3px;
+    }
+
+
+    .part_2 {
+        margin-top: 790px;
+    }
+
+
+}
+
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+    .banners {
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bloco_1 {
+        flex: 25%;
+        margin: 0 2.5%;
+
+    }
+
+    .bloco_2 {
+        flex: 25%;
+        margin: 0 2.5%;
+
+    }
+
+    .bloco_3 {
+        flex: 25%;
+        margin: 0 2.5%;
+
+    }
+
+    .bloco_4 {
+        flex: 25%;
+        margin: 0 2.5%;
+        margin-bottom: 1px;
+
+    }
+}
+
+
+/*Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+    .banners {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 300px;
+    }
+
+    .bloco_1 {
+        margin-left: 7%;
+        margin-right: 0;
+    }
+
+    .bloco_2 {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .bloco_3 {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .bloco_4 {
+        margin-right: 7%;
+        margin-left: 10px;
+    }
+
+}
